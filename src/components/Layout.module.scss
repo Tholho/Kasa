@@ -4,6 +4,7 @@
     font-style: normal;
 }
 
+
 .container {
     width: 100vw;
 }
@@ -27,7 +28,7 @@ nav ul {
 }
 
 nav ul * {
-    margin: 0px 20px;
+    margin-left: 20px;
     text-decoration: none;
     text-wrap: nowrap;
     color: black;
@@ -38,17 +39,29 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 768px) {
+    header,
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .header {
-        margin: 20px;
         font-size: 3vw;
     }
+
     nav ul * {
         margin: 2vw;
+        text-transform: uppercase;
     }
 }
 
 @media screen and (min-width: 769px) {
     .header {
         margin: 45px 100px;
+    }
+
+    header,
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }

@@ -24,7 +24,7 @@ function Layout({ children }) {
             <main>
                 {children}
             </main>
-            <footer>
+            <footer className={styles.footer}>
                 <p>Footer content</p>
             </footer>
         </div>

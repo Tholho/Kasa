@@ -1,13 +1,27 @@
 import React from "react"
 import styles from "./Hero.module.scss"
 
-function Hero({backgroundImg, phrase}) {
+function Phrase({phrase}) {
+    if (!phrase) {
+        return null
+    }
+    else {
+        return (
+            <>
+            <h1>{phrase[0]}</h1>
+            <h1>{phrase[1]}</h1>
+            </>
+        )
+    }
+}
+
+export default function Hero({backgroundImg, phrase}) {
     return (
         <div className={styles.container}>
-            <img className={styles.img} src={backgroundImg}></img>
-            <h1 className={styles.phrase}>{phrase}</h1>
+            <img className={styles.img} src={backgroundImg}/>
+            <div className={styles.phrase}>
+            <Phrase phrase={phrase}/>
+            </div>
         </div>
     )
 }
-
-export default Hero
