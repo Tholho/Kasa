@@ -1,0 +1,36 @@
+.foldedContent {
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 5px;
+    height: 52px;
+    align-items: center;
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+    svg {
+        margin-right: 2%;
+    }
+}
+
+.unfoldedContent {
+    position: relative;
+    top: -20px;
+    z-index: -1;
+    background-color: #F6F6F6;
+    padding: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .foldedContent {
+        height: 30px;;
+        h2 {
+            font-size: 0.813rem;
+        }
+        svg {
+            transform: scale(0.6);
+        }
+    }
+}

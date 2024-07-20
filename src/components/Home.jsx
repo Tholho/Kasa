@@ -1,7 +1,13 @@
 import React from "react"
 import Hero from "./Hero"
 import Gallery from "./Gallery"
+import logements from "/src/assets/JSON/logements.json"
 import styles from "./Home.module.scss"
+
+
+function makeGallery() {
+
+}
 
 function Home() {
     const backgroundImg = {};

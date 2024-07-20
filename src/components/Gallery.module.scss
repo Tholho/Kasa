@@ -1,0 +1,11 @@
+.container {
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    
+}
+.cardsContainer {
+    margin: 50px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}

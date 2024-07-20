@@ -1,0 +1,37 @@
+
+.cardContainer {
+    position: relative;
+    max-width: 340px;
+    margin-top: 50px;
+    transition: all 0.2s;
+    filter: brightness(1);
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        border-radius: 10px;
+    }
+    &:hover img {
+        filter:brightness(0.7)
+    }
+    &:hover p {
+        filter:brightness(1.2)
+    }
+}
+.title {
+    font-size: 1.125rem;
+    font-weight: 800;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color:white;
+    padding: 2px;
+    margin: 15px;
+    display: inline-block;
+    max-width: 260px;
+    border-radius: 5px;
+    //background-blend-mode: darken;
+    background-color: rgba(#615d5d, 0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+}
