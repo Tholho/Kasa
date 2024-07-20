@@ -14,14 +14,13 @@ function Home() {
     backgroundImg.source = "../assets/img/HeroHome.jpg"
     return (
         <>
-        <body>
         <Hero
         backgroundImg={"./src/assets/img/HeroHome.jpg"}
         phrase={["Chez vous,", "partout et ailleurs"]}
+        darken={true}
         />
         <Gallery
         />
-        </body>
         </>
     )
 }

@@ -15,10 +15,10 @@ function Phrase({phrase}) {
     }
 }
 
-export default function Hero({backgroundImg, phrase}) {
+export default function Hero({backgroundImg, phrase, darken}) {
     return (
         <div className={styles.container}>
-            <img className={styles.img} src={backgroundImg}/>
+            <img className={`${styles.img} ${darken ? styles.darken : ''}`} src={backgroundImg}/>
             <div className={styles.phrase}>
             <Phrase phrase={phrase}/>
             </div>

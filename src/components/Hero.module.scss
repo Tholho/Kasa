@@ -13,8 +13,11 @@ align-items: center;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: brightness(0.4);
+    
     border-radius: 25px;
+    &.darken {
+        filter: brightness(0.4);
+    }
 }
 
 .phrase {

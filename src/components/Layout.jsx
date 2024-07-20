@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import styles from "./Layout.module.scss"
 
-function Layout({ children }) {
+function Layout() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -22,7 +22,7 @@ function Layout({ children }) {
                 </nav>
             </header>
             <main>
-                {children}
+                <Outlet />
             </main>
             <footer className={styles.footer}>
                 <div className={styles.footerGroup}>
