@@ -25,32 +25,76 @@ nav ul {
     flex-flow: row nowrap;
     list-style: none;
     color: black;
+
+    * {
+        margin-left: 20px;
+        text-decoration: none;
+        text-wrap: nowrap;
+        color: black;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
+
 }
 
-nav ul * {
-    margin-left: 20px;
-    text-decoration: none;
-    text-wrap: nowrap;
-    color: black;
-}
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 209px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    justify-content: space-around;
+    //align-items: center;
+    color: white;
 
-nav ul li:hover {
-    text-decoration: underline;
+    &Group {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    svg {
+        margin-top: auto
+    }
+
+    p {
+        margin-bottom: auto;
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
     header,
     main {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .header {
-            font-size: 3vw;
+        font-size: 3vw;
     }
 
     nav ul * {
         margin: 2vw;
         text-transform: uppercase;
+    }
+
+    .footer {
+        align-items: center;
+        &Group {
+            max-width: min-content;
+            align-items: center;
+            p {
+                font-size: 0.75rem;
+                text-wrap: wrap;
+                text-align: center;
+            }
+        }
     }
 }
 
