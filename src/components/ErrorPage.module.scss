@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-items: space-around;
+    align-items: center;
+    gap: 140px;
+}
+.big404 {
+    margin: 0;
+    font-size: 18rem;
+    color: #FF6060
+}
+
+.sub404 {
+    font-size: 2.25rem;
+    color: #FF6060;
+}
+
+.goToHome {
+    a {
+    color: black;
+    }
+    font-size: 1.125rem;
+    text-decoration: underline;
+    margin-bottom: 140px;
+}

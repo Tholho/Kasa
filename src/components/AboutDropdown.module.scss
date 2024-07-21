@@ -22,7 +22,7 @@
         transform: scale(1) rotate(0deg);
         transition: all 0.4s;
         &.fold {
-            transform: scale(1) rotate(180deg);
+            transform: scale(1) rotate(-180deg);
         }
     }
 }
@@ -31,16 +31,14 @@
     position: relative;
     z-index: -1;
     background-color: #F6F6F6;
-    padding: 3%;
+//    padding: 3%;
     max-height: 0;
     overflow: hidden;
     padding: 0px 20px;
     margin: 0px;
-    transition: all 0.5s;
+    transition: all 0.25s;
     &.unfold {
         padding: 20px;
-        visibility: visible;
-        overflow: scroll;
         max-height: 500px; /* ajustez en fonction de votre contenu */
       }
 }
@@ -62,7 +60,7 @@
             transform: scale(0.6) rotate(0deg);
         transition: all 0.4s;
         &.fold {
-            transform: scale(0.6) rotate(180deg);
+            transform: scale(0.6) rotate(-180deg);
         }
         }
     }
