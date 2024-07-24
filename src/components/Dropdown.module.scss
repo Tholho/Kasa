@@ -1,0 +1,67 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+
+.foldedContent {
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    height: 52px;
+    align-items: center;
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+    svg {
+        margin-right: 2%;
+        transform: scale(1) rotate(0deg);
+        transition: all 0.4s;
+        &.fold {
+            transform: scale(1) rotate(-180deg);
+        }
+    }
+}
+
+.unfoldedContent {
+    position: relative;
+    z-index: -1;
+    background-color: #F6F6F6;
+//    padding: 3%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 20px;
+    margin: 0px;
+    transition: all 0.25s;
+    &.unfold {
+        padding: 20px;
+        max-height: 500px; /* ajustez en fonction de votre contenu */
+      }
+}
+  
+  
+@media screen and (min-width: 769px) {
+    .container {
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .foldedContent {
+        height: 30px;;
+        h2 {
+            font-size: 0.813rem;
+        }
+        svg {
+            transform: scale(0.6) rotate(0deg);
+        transition: all 0.4s;
+        &.fold {
+            transform: scale(0.6) rotate(-180deg);
+        }
+        }
+    }
+}

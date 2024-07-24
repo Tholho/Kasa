@@ -1,0 +1,123 @@
+.container {
+
+}
+
+.coverImg {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftElements {
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.location {
+
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tagElem {
+    background-color: #FF6060;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+.rightElements {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+}
+
+.host {
+    display: flex;
+    //  gap: 20px;
+    justify-items: flex-end;
+    &Name {
+        font-size: 1.125rem;
+        color:#FF6060;
+        white-space: wrap;
+        align-self: center;
+        text-align: end;
+        max-width: fit-content;
+    }
+    &Picture {
+        border-radius: 100%;
+        margin: 20px;
+        margin-right: 0px;
+    }
+}
+
+.rating {
+    max-width: 196px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdowns {
+    //width: 100%;
+    text-align: justify;
+    gap: 6%;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.dropdownList {
+    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    
+}
+
+.description {
+    margin: 0px;
+}
+
+@media screen and (min-width: 769px) {
+    .coverImg {
+        height: 415px;
+    }
+    .host {
+        &Picture {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    .dropdowns {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .host {
+        &Picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

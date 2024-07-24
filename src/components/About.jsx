@@ -2,7 +2,7 @@ import React from "react"
 import Hero from "./Hero"
 import Dropdown from "./Dropdown"
 import AboutDropdown from "./AboutDropdown"
-//import styles from "./About.module.scss"
+import styles from "./About.module.scss"
 
 function About() {
     return (

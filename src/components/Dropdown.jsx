@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import styles from "./AboutDropdown.module.scss"
+import styles from "./Dropdown.module.scss"
 
 export default function Dropdown({ title, children }) {
 

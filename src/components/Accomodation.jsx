@@ -29,7 +29,7 @@ function Rating({ rating }) {
     }
 
     return (
-        <div>
+        <div className={styles.rating}>
             {stars}
         </div>
     );
@@ -37,9 +37,16 @@ function Rating({ rating }) {
 
 function TagList({ tags }) {
     const tagList = tags.map((tag, index) => (
-        <li key={index}>{tag}</li>
+        <li key={index} className={styles.tagElem}>{tag}</li>
     ))
-    return <ul>{tagList}</ul>
+    return <ul className={styles.tags}>{tagList}</ul>
+}
+
+function DropdownList({elements}) {
+    const elemList = elements.map((element, index) => (
+        <li key={index}>{element}</li>
+    ))
+    return <ul className={styles.dropdownList}>{elemList}</ul>
 }
 
 export default function Accomodation() {
@@ -61,20 +68,30 @@ export default function Accomodation() {
     }
 
     return (
-        <div>
-            <img src={data.cover} />
-            <h1>{data.title}</h1>
-            <h2>{data.location}</h2>
-            <p>{data.host.name}</p>
-            <img src={data.host.picture} />
-            <TagList tags={data.tags} />
-            <Rating rating={data.rating} />
-            <Dropdown title="Description">
-            <p>{data.description}</p>
-            </Dropdown>
-            <Dropdown title="Équipements">
-                <TagList tags={data.equipments} />
-            </Dropdown>
+        <div className={styles.container}>
+            <img className={styles.coverImg} src={data.cover} />
+            <div className={styles.elements}>
+                <div className={styles.leftElements}>
+                    <h1 className={styles.title}>{data.title}</h1>
+                    <h2 className={styles.location}>{data.location}</h2>
+                    <TagList tags={data.tags} />
+                </div>
+                <div className={styles.rightElements}>
+                    <div className={styles.host}>
+                        <p className={styles.hostName}>{data.host.name}</p>
+                        <img className={styles.hostPicture} src={data.host.picture} />
+                    </div>
+                    <Rating rating={data.rating} />
+                </div>
+            </div>
+            <div className={styles.dropdowns}>
+                <Dropdown title="Description">
+                    <p className={styles.description}>{data.description}</p>
+                </Dropdown>
+                <Dropdown title="Équipements">
+                    <DropdownList elements={data.equipments} />
+                </Dropdown>
+            </div>
         </div>
     );
 }
