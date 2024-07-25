@@ -9,7 +9,10 @@ export default function Card({...logement}) {
         state={{logement}}
         >
         <div className={styles.cardContainer}>
+            <div className={styles.imgContainer}>
         <img src={logement.cover}/>
+        <div className={styles.brightnessGradient}></div>
+        </div>
         <p className={styles.title}>{logement.title}</p>
         </div>
         </Link>
