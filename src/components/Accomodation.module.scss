@@ -33,6 +33,7 @@
 
 .tags {
     display: flex;
+    flex-flow: wrap;
     gap: 10px;
     padding:0;
     margin: 10px 0px;
@@ -46,6 +47,7 @@
     font-weight: 700;
     border-radius: 10px;
     padding: 5px 30px;
+    align-content: center;
 }
 
 .rightElements {
@@ -117,10 +119,41 @@
 }
 
 @media screen and (max-width: 768px) {
+    .elements {
+        flex-flow: column;
+    }
+
+
+    .title {
+        font-size: 1.125rem;
+    }
+
+    .location {
+        font-size: 0.875rem;
+    }
+
+    .rightElements {
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tags {
+        max-width: fit-content;
+    }
+
+    .tagElem {
+        font-size: 0.625rem;
+    }
+
     .host {
         &Picture {
             width: 32px;
             height: 32px;
         }
+    }
+
+    .rating * {
+        margin-right: 5px;
     }
 }
