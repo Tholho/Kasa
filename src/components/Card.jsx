@@ -7,6 +7,7 @@ export default function Card({...logement}) {
         <Link 
         to={`accomodation/${logement.id}`}
         state={{logement}}
+        className={styles.cardLink}
         >
         <div className={styles.cardContainer}>
             <div className={styles.imgContainer}>

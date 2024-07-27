@@ -2,7 +2,7 @@ $cardSize: 340px;
 
 .cardContainer {
     position: relative;
-    margin: 25px;
+    margin: 15px;
     padding: 0;
     //transition: all 0.3s;
     filter: brightness(1);
@@ -47,11 +47,10 @@ $cardSize: 340px;
     font-size: 1.125rem;
     font-weight: 800;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0%;
+    left: 5%;
     color:white;
     padding: 5px;
-    margin: 15px;
     display: inline-block;
     max-width: 260px;
     border-radius: 5px;
@@ -61,20 +60,30 @@ $cardSize: 340px;
 }
 
 @media screen and (min-width: 769px) {
+    .cardLink {
+        max-width: 30%;
+    }
+    .title {
+        font-size: 100%;
+    }
+    
     .cardContainer {
         max-width: $cardSize;
         aspect-ratio: 1;
     }
+
     .brightnessGradient {
         max-height: $cardSize;
     }
 }
 
 @media screen and (max-width: 768px) {
+    
     .cardContainer {
         max-height: $cardSize;
         margin: 0px;
         margin-top: 25px;
+        
         img {
             height: 255px;
         }
