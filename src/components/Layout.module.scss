@@ -14,6 +14,7 @@
 }
 
 .header {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -21,6 +22,9 @@
     //margin: 45px 0px;
     font-size: 1.5rem;
     font-weight: 400;
+    svg {
+        max-height: 68px;
+    }
 }
 
 nav ul {
@@ -115,6 +119,6 @@ nav ul {
 
 @media screen and (max-width: 768px) {
     .header {
-        margin-bottom: 20px;
+        margin-bottom: 1.5vh;
     }
 }
