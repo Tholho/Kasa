@@ -3,12 +3,13 @@ import Hero from "./Hero"
 import Dropdown from "./Dropdown"
 import AboutDropdown from "./AboutDropdown"
 import styles from "./About.module.scss"
+import heroImg from "../assets/img/HeroAbout.jpg"
 
 function About() {
     return (
         <div className={styles.container}>
             <Hero
-                backgroundImg={"./src/assets/img/HeroAbout.jpg"}
+                backgroundImg={heroImg}
                 //phrase={["Chez vous,", "partout et ailleurs"]}
             />
             <Dropdown title={"Fiabilité"}>
