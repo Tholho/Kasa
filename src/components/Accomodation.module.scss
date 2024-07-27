@@ -147,13 +147,25 @@
     }
 
     .host {
+        &Name {
+            font-size: 0.75rem;
+        }
         &Picture {
+            margin: 0;
+            margin-left: 10px;
+            align-self: center;
             width: 32px;
             height: 32px;
         }
     }
 
-    .rating * {
-        margin-right: 5px;
+    .rating {
+        * {
+            margin-right: 5px;
+        }
+        svg {
+            max-height: 18px;
+            width: 100%;
+        }
     }
 }
