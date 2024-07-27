@@ -5,6 +5,7 @@ import logementsJSON from "/src/assets/JSON/logements.json";
 import styles from "./Accomodation.module.scss";
 import ErrorPage from "./ErrorPage";
 import Dropdown from "./Dropdown";
+import Carousel from "./Carousel";
 
 function Rating({ rating }) {
     const stars = [];
@@ -66,10 +67,11 @@ export default function Accomodation() {
     if (!data) {
         return <ErrorPage />;
     }
+//            <img className={styles.coverImg} src={data.cover} />
 
     return (
         <div className={styles.container}>
-            <img className={styles.coverImg} src={data.cover} />
+            <Carousel pictures={data.pictures} />
             <div className={styles.elements}>
                 <div className={styles.leftElements}>
                     <h1 className={styles.title}>{data.title}</h1>
