@@ -15,7 +15,7 @@ function Home() {
     return (
         <>
         <Hero
-        backgroundImg={"/src/assets/img/HeroHome.jpg"}
+        backgroundImg={"../src/assets/img/HeroHome.jpg"}
         phrase={["Chez vous,", "partout et ailleurs"]}
         darken={true}
         />
