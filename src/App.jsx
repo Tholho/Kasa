@@ -10,12 +10,12 @@ import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
-    path: "/Kasa",
+    path: "/Kasa/",
     element: <Layout />,
     errorElement: <Layout />,
     children: [
       {
-        path: "/Kasa",
+        path: "/Kasa/",
         element: <Home />,
       },
       {
