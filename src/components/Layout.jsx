@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link, Outlet, useRouteError } from 'react-router-dom';
+import { NavLink, Outlet, useRouteError } from 'react-router-dom';
 import styles from "./Layout.module.scss"
 import ErrorPage from './ErrorPage';
+import React from 'react'
 
 function Layout() {
     const error = useRouteError();
@@ -18,10 +18,14 @@ function Layout() {
                     <path d="M106.766 34.4632L84.8496 21.6784L72.6944 14.6376L60.7234 35.5749L60.9076 55.2152L82.6396 68L84.8496 66.703V48.1744L94.6106 30.9428L104.556 36.6866V55.2152L106.766 53.9182V34.4632Z" fill="#FF6060" />
                 </svg>
 
-                <nav>
-                    <ul>
-                        <li><Link to="/">Accueil</Link></li>
-                        <li><Link to="/about">A propos</Link></li>
+                <nav className={styles.navBar}>
+                    <ul className={styles.navUL}>
+                        <li className={styles.navLI}><NavLink exact to="/" className={({ isActive }) =>
+                                    `${styles.link} ${isActive ? styles.activeLink : ''}`
+                                }>Accueil</NavLink></li>
+                        <li className={styles.navLI}><NavLink to="/about" className={({ isActive }) =>
+                                    `${styles.link} ${isActive ? styles.activeLink : ''}`
+                                }>A propos</NavLink></li>
                     </ul>
                 </nav>
             </header>

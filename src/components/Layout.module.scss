@@ -19,7 +19,6 @@
     justify-content: space-between;
     background-color: white;
     align-items: center;
-    //margin: 45px 0px;
     font-size: 1.5rem;
     font-weight: 400;
     svg {
@@ -27,25 +26,39 @@
     }
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-    list-style: none;
-    color: black;
 
-    * {
+
+.nav {
+    &Bar {
+        display: flex;
+        justify-content: space-around;
+        a {
+            text-decoration: none;
+            &.activeLink {
+                text-decoration: underline;
+            }
+        }
+    }
+    &UL {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        list-style: none;
+        color: black;
+
+    }
+    &LI {
         margin-left: 20px;
         text-decoration: none;
         text-wrap: nowrap;
         color: black;
-    }
-
-    li:hover {
-        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
 }
+
 
 .footer {
     height: 209px;

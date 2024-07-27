@@ -11,6 +11,7 @@
 .elements {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .leftElements {
@@ -54,6 +55,7 @@
     display: flex;
     flex-flow: column;
     align-content: flex-end;
+    min-width: 20%;
 }
 
 .host {
@@ -79,6 +81,7 @@
     max-width: 196px;
     display: flex;
     justify-content: space-around;
+    gap: 10px;
 }
 
 .dropdowns {
