@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 415px;
+}
+
+.carouselNav {
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 35vh;
+    }
+}
