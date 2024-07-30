@@ -4,11 +4,10 @@
 }
 
 .cardsContainer {
-    padding: 25px;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-    gap: 0px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 22.5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -20,6 +19,7 @@
 @media screen and (max-width: 768px) {
     .container {
         margin: 0;
+        margin-top: 25px;
     }
     .cardsContainer {
         flex-flow: column;

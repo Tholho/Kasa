@@ -2,9 +2,9 @@ $cardSize: 340px;
 
 .cardContainer {
     position: relative;
+    height: 340px;
     margin: 15px;
     padding: 0;
-    //transition: all 0.3s;
     filter: brightness(1);
     img {
         object-fit: cover;
@@ -58,16 +58,8 @@ $cardSize: 340px;
 }
 
 @media screen and (min-width: 769px) {
-    .cardLink {
-        max-width: 30%;
-    }
     .title {
         font-size: 100%;
-    }
-    
-    .cardContainer {
-        max-width: $cardSize;
-        aspect-ratio: 1;
     }
 
     .brightnessGradient {
@@ -76,17 +68,15 @@ $cardSize: 340px;
 }
 
 @media screen and (max-width: 768px) {
-    
+    .title {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
     .cardContainer {
+        position: relative;
         max-height: $cardSize;
         margin: 0px;
         margin-top: 25px;
-        
-        img {
-            height: 255px;
-        }
     }
-    .brightnessGradient {
-        height: 255px;
-    }  
 }
