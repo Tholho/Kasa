@@ -68,6 +68,8 @@ export default function Accomodation() {
         return <ErrorPage />;
     }
 //            <img className={styles.coverImg} src={data.cover} />
+// pas de carousel si 1 image
+// afficher compteur d'image en bas
 
     return (
         <div className={styles.container}>
