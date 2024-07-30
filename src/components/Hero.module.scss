@@ -40,6 +40,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .img {
+        border-radius: 10px;
+    }
+
     .phrase {
         margin-left: 16px;
     }
