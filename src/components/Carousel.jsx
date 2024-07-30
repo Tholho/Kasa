@@ -1,19 +1,23 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "./Carousel.module.scss";
 
 export default function Carousel({ pictures }) {
     const [index, setIndex] = useState(0);
     const [isLeftActive, setIsLeftActive] = useState(false);
     const [isRightActive, setIsRightActive] = useState(false);
-
+    const timeoutPrevRef = useRef(null);
+    const timeoutNextRef = useRef(null);
 
     let hasPrev = index > 0;
     let hasNext = index < pictures.length - 1;
 
     function handlePrevEvent() {
+        if (timeoutPrevRef.current) {
+            clearTimeout(timeoutPrevRef.current);
+          }
         setIsLeftActive(true);
-        setTimeout(() => setIsLeftActive(false), 500);
+        timeoutPrevRef.current = setTimeout(() => setIsLeftActive(false), 1000);
         if (hasPrev) {
             setIndex(index - 1)
         }
@@ -23,8 +27,12 @@ export default function Carousel({ pictures }) {
     }
 
     function handleNextEvent() {
+        if (timeoutNextRef.current) {
+            clearTimeout(timeoutNextRef.current);
+          }
         setIsRightActive(true);
-        setTimeout(() => setIsRightActive(false), 500);
+        timeoutNextRef.current =
+        setTimeout(() => setIsRightActive(false), 1000);
         if (hasNext) {
             setIndex(index + 1)
         }

@@ -7,6 +7,7 @@
 
 .foldedContent {
     background-color: #FF6060;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -33,7 +34,6 @@
     position: relative;
     z-index: -1;
     background-color: #F6F6F6;
-//    padding: 3%;
     max-height: 0;
     overflow: hidden;
     padding: 0px 20px;
@@ -47,8 +47,6 @@
   
   
 @media screen and (min-width: 769px) {
-    .container {
-    }
 }
 
 @media screen and (max-width: 768px) {

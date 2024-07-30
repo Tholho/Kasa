@@ -20,7 +20,7 @@ function Layout() {
 
                 <nav className={styles.navBar}>
                     <ul className={styles.navUL}>
-                        <li className={styles.navLI}><NavLink exact to="/" className={({ isActive }) =>
+                        <li className={styles.navLI}><NavLink to="/" className={({ isActive }) =>
                                     `${styles.link} ${isActive ? styles.activeLink : ''}`
                                 }>Accueil</NavLink></li>
                         <li className={styles.navLI}><NavLink to="/about" className={({ isActive }) =>
