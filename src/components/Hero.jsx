@@ -1,6 +1,9 @@
 import React from "react"
 import styles from "./Hero.module.scss"
 
+/*
+The redundant h1 tag allows easier responsiveness fidelity to target design
+*/
 export default function Hero({ backgroundImg, phrase, darken }) {
     return (
         <div className={styles.container}>

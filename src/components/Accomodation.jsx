@@ -10,6 +10,13 @@ import Rating from "./Rating";
 import TagList from "./TagList";
 import DropdownList from "./DropdownList";
 
+/*
+Here, the useEffect sections aims at using data previously stored and transmitted via 
+the Card component if available. Otherwise it will parse the original data again to create
+the object needed for DOM creation. useEffect dependancies (id, location.state) ensure
+that the data will update as URL changes or if location.state evolves, although the latter
+one should not change independantly from the URL as for now.
+*/
 export default function Accomodation() {
     const { id } = useParams();
     const location = useLocation();

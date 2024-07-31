@@ -4,6 +4,7 @@ import Card from "./Card";
 import styles from "./Gallery.module.scss"
 
 export default function Gallery() {
+    //Building Gallery and assigning a unique key for react's own logic
     const gallery = logements.map(logement =>
         <Card key={logement.id} {...logement} />
     )

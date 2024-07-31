@@ -2,6 +2,12 @@ import React from "react";
 import { useState, useRef } from "react";
 import styles from "./NavButton.module.scss"
 
+/*
+Here, useRefs allows to store the id of the timeout to access it and reset it in the eventuality
+where the user triggers the event again by clicking the button
+this allow to avoid redisplaying the grey background upon further activation, thus
+not overloading visually the interface since only the first click is needed for UX
+*/
 export default function NavButton({ pictures, index, setIndex }) {
     const timeoutPrevRef = useRef(null);
     const timeoutNextRef = useRef(null);
