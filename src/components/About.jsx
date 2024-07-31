@@ -1,7 +1,7 @@
 import React from "react"
 import Hero from "./Hero"
 import Dropdown from "./Dropdown"
-import image from "./src/assets/img/HeroAbout.jpg"
+import image from "/src/assets/img/HeroAbout.jpg"
 
 export default function About() {
     return (
