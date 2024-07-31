@@ -4,7 +4,6 @@
     font-style: normal;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -26,8 +25,6 @@
     }
 }
 
-
-
 .nav {
     &Bar {
         display: flex;
@@ -40,6 +37,7 @@
             }
         }
     }
+
     &UL {
         display: flex;
         justify-content: space-around;
@@ -48,11 +46,13 @@
         color: black;
 
     }
+
     &LI {
         margin-left: 20px;
         text-decoration: none;
         text-wrap: nowrap;
         color: black;
+
         &:hover {
             text-decoration: underline;
         }
@@ -68,7 +68,6 @@
     flex-flow: column;
     background-color: black;
     justify-content: space-around;
-    //align-items: center;
     color: white;
     margin-top: 20px;
 
@@ -107,9 +106,11 @@
 
     .footer {
         align-items: center;
+
         &Group {
             max-width: min-content;
             align-items: center;
+
             p {
                 font-size: 0.75rem;
                 text-wrap: wrap;
@@ -120,6 +121,7 @@
 }
 
 @media screen and (min-width: 769px) {
+
     .header {
         margin: 45px 100px;
     }
@@ -132,6 +134,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     .header {
         flex: 0;
         margin-bottom: 1.5vh;

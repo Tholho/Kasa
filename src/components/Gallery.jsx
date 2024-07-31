@@ -3,8 +3,7 @@ import logements from "/src/assets/JSON/logements.json"
 import Card from "./Card";
 import styles from "./Gallery.module.scss"
 
-function Gallery() {
-    let test = logements[0].id;
+export default function Gallery() {
     const gallery = logements.map(logement =>
         <Card key={logement.id} {...logement} />
     )
@@ -16,5 +15,3 @@ function Gallery() {
         </div>
     )
 }
-
-export default Gallery

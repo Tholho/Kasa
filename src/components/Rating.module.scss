@@ -1,0 +1,19 @@
+.rating {
+    max-width: 196px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .rating {
+        * {
+            margin-right: 5px;
+        }
+
+        svg {
+            max-height: 18px;
+            width: 100%;
+        }
+    }
+}
