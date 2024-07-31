@@ -3,12 +3,11 @@ import styles from "./Layout.module.scss"
 import ErrorPage from './ErrorPage';
 import React from 'react'
 
-function Layout() {
+export default function Layout() {
     const error = useRouteError();
 
     return (
         <div className={styles.container}>
-
             <header className={styles.header}>
                 <svg viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.5745 34.6485L9.34014 46.1362V62.2561H0.5V0H9.34014V34.8338L42.859 0H52.9883L26.6521 27.9782L54.83 62.2561H44.5165L20.5745 34.6485Z" fill="#FF6060" />
@@ -51,5 +50,3 @@ function Layout() {
         </div>
     );
 }
-
-export default Layout;

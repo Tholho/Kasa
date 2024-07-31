@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import styles from "./NavButton.module.scss"
 
-export default function NavButton({ pictures, index, setIndex}) {
+export default function NavButton({ pictures, index, setIndex }) {
     const timeoutPrevRef = useRef(null);
     const timeoutNextRef = useRef(null);
     const [isLeftActive, setIsLeftActive] = useState(false);
@@ -61,5 +61,4 @@ export default function NavButton({ pictures, index, setIndex}) {
             }
         </>
     )
-
 }

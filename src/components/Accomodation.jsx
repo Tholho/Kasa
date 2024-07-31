@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useLocation, useParams, useRouteError } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import logementsJSON from "/src/assets/JSON/logements.json";
 import styles from "./Accomodation.module.scss";
 import ErrorPage from "./ErrorPage";
