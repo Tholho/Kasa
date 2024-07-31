@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./ErrorPage.module.scss"
 
-export default function ErrorPage({error}) {
-  
+export default function ErrorPage({ error }) {
   error ? console.error(error) : console.log('error');
 
   const errorCode = error && error.code ? error.code : "404";

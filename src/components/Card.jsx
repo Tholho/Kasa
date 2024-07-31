@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "react-router-dom"
 import styles from "./Card.module.scss"
 
-export default function Card({...logement}) {
+export default function Card({ ...logement }) {
     return (
-        <Link 
-        to={`accomodation/${logement.id}`}
-        state={{logement}}
-        className={styles.cardLink}
+        <Link
+            to={`accomodation/${logement.id}`}
+            state={{ logement }}
+            className={styles.cardLink}
         >
-        <div className={styles.cardContainer}>
-            <div className={styles.imgContainer}>
-        <img src={logement.cover}/>
-        <div className={styles.brightnessGradient}></div>
-        </div>
-        <p className={styles.title}>{logement.title}</p>
-        </div>
+            <div className={styles.cardContainer}>
+                <div className={styles.imgContainer}>
+                    <img src={logement.cover} />
+                    <div className={styles.brightnessGradient}></div>
+                </div>
+                <p className={styles.title}>{logement.title}</p>
+            </div>
         </Link>
     )
 }

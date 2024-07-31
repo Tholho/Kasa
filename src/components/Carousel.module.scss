@@ -4,14 +4,6 @@
     height: 415px;
 }
 
-.carouselNav {
-    margin: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .photo {
     z-index: -1;
     position: absolute;
@@ -22,6 +14,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     .container {
         height: 35vh;
     }

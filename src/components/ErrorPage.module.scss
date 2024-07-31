@@ -5,6 +5,7 @@
     align-items: center;
     gap: 140px;
 }
+
 .big404 {
     margin: 0;
     font-size: 18rem;
@@ -18,9 +19,11 @@
 }
 
 .goToHome {
+
     a {
-    color: black;
+        color: black;
     }
+
     text-align: center;
     font-size: 1.125rem;
     text-decoration: underline;
@@ -28,15 +31,19 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .container {
-        gap : 50px;
+        gap: 50px;
     }
+
     .big404 {
         font-size: 6rem;
     }
+
     .sub404 {
         font-size: 1.125rem;
     }
+
     .goToHome {
         font-size: 0.875rem;
     }
