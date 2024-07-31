@@ -1,12 +1,13 @@
 import React from "react"
 import Hero from "./Hero"
 import Dropdown from "./Dropdown"
+import image from "./src/assets/img/HeroAbout.jpg"
 
 export default function About() {
     return (
         <>
             <Hero
-                backgroundImg={"./src/assets/img/HeroAbout.jpg"}
+                backgroundImg={ image }
             />
             <Dropdown title={"Fiabilité"}>
                 <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
