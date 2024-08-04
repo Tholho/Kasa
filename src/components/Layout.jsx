@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useRouteError } from 'react-router-dom';
-import styles from "./Layout.module.scss"
+import styles from "./modules_scss/Layout.module.scss"
 import ErrorPage from './ErrorPage';
 import React from 'react'
 

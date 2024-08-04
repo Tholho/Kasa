@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import styles from "./Carousel.module.scss";
+import styles from "./modules_scss/Carousel.module.scss";
 import NavButton from "./NavButton";
 
 export default function Carousel({ pictures }) {

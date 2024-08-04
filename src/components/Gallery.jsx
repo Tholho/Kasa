@@ -1,7 +1,7 @@
 import React from "react"
 import logements from "/src/assets/JSON/logements.json"
 import Card from "./Card";
-import styles from "./Gallery.module.scss"
+import styles from "./modules_scss/Gallery.module.scss"
 
 export default function Gallery() {
     //Building Gallery and assigning a unique key for react's own logic

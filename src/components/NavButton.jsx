@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-import styles from "./NavButton.module.scss"
+import styles from "./modules_scss/NavButton.module.scss"
 
 /*
 Here, useRefs allows to store the id of the timeout to access it and reset it in the eventuality

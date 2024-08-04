@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "./Dropdown.module.scss"
+import styles from "./modules_scss/Dropdown.module.scss"
 
 export default function Dropdown({ title, children }) {
     const [isFolded, setIsFolded] = useState(true);

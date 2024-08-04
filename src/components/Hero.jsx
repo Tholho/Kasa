@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Hero.module.scss"
+import styles from "./modules_scss/Hero.module.scss"
 
 /*
 The redundant h1 tag allows easier responsiveness fidelity to target design

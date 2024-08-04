@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TagList.module.scss"
+import styles from "./modules_scss/TagList.module.scss"
 
 export default function TagList({ tags }) {
     const tagList = tags.map((tag, index) => (

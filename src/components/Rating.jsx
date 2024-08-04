@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Rating.module.scss"
+import styles from "./modules_scss/Rating.module.scss"
 
 export default function Rating({ rating }) {
     const stars = [];

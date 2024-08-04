@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./DropdownList.module.scss"
+import styles from "./modules_scss/DropdownList.module.scss"
 
 export default function DropdownList({ elements }) {
     const elemList = elements.map((element, index) => (
